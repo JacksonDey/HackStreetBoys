@@ -4,7 +4,10 @@
  / /_/ /  __/ |/ / /___/ /_/ / /_/ / 
 /_____/\___/|___/_____/\____/\__, /  
                             /____/  
+1-12-16 -- Ver 1.01
+*amishArcade.java added
 
+--David Merlinsky
 ———————————————————————————
 
 1-11-16 — Ver 1.0
@@ -12,3 +15,4 @@
 * readme.txt updated
 
 — Jackson Deysine
+
