@@ -9,6 +9,6 @@
 
 1-11-16 — Ver 1.0
 * DevLog Added
-* read.txt updated
+* readme.txt updated
 
 — Jackson Deysine
