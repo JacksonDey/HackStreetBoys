@@ -7,4 +7,8 @@
 
 ———————————————————————————
 
-1-11-16 — Ver 1.0 — DevLog Added — Jackson Deysine
+1-11-16 — Ver 1.0
+* DevLog Added
+* read.txt updated
+
+— Jackson Deysine
