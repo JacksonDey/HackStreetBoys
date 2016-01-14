@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.*;
-public class connect4{
+public class connect4 extends Game {
     private String[][] board;
     private boolean player;
     public connect4(){
