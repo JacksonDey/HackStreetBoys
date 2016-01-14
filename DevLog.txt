@@ -4,6 +4,12 @@
  / /_/ /  __/ |/ / /___/ /_/ / /_/ / 
 /_____/\___/|___/_____/\____/\__, /  
                             /____/  
+1-13-16 -- Ver 1.02
+*connect4.java almost done
+*added Game.java (jackson too)
+*worked on Mastermind.java(Jackson too)
+
+--David Merlinsky
 1-12-16 -- Ver 1.01
 *amishArcade.java added
 
