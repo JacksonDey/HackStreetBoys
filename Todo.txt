@@ -1,0 +1,12 @@
+ ______   ___   
+(  /     ( / \  
+  /__     /  /__
+_/(_)---(/\_/(_)
+                
+——————————————————————————————————————————————————————
+                
+*Finish Up Code for MasterMind 
+*Finalize Amish Arcade functionality(i.e. abstract or not)
+*Add coin system
+*Add more games
+*Win Counter
