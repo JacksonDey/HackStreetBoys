@@ -5,6 +5,12 @@
 /_____/\___/|___/_____/\____/\__, /  
                             /____/  
 ——————————————————————————————————————————————————————
+1-19-16 — Ver 1.11
+* Othello.java production has begun
+
+— Jackson Deysine
+———————————————————————————
+
 1-18-16 — Ver 1.1
 * MasterMind added and almost fully operational (David as well)
 * Todo list updated
