@@ -1,8 +1,11 @@
 import java.io.*;
 import java.util.*;
-public class connect4 extends Game {
+public class connect4{
     private String[][] board;
     private boolean player;
+
+    private InputStreamReader isr;
+    private BufferedReader in;
     public connect4(){
 	board =new String[8][8];
     }
@@ -54,7 +57,6 @@ public class connect4 extends Game {
 		if (tot>=4){
 		    return true;
 		}
-		System.out.println(tot);
 	    }
 	}
 	return false;
@@ -73,15 +75,14 @@ public class connect4 extends Game {
 		if (tot>=4){
 		    return true;
 		}
-		System.out.println(tot);
 	    }
 	}
 	return false;
     }	
     public boolean wincheckdi(){
-	for(int i=0;i<8;i++){
+	for(int i=1;i<8;i++){
 	    int tot =0;
-	    for (int c=0;c<8;c++){
+	    for (int c=1;c<8;c++){
 		if(i + c>=8){ break;}
 		if (board[i +c][c]!= "| |" &&
 		    board[i+ c-1][c-1]== board[i +c][c]){
@@ -97,27 +98,33 @@ public class connect4 extends Game {
 	}
 	return false;
     }
+    public boolean wincheck(){
+	return wincheckdi() || wincheckrow() || wincheckcol();
+    }
+    public void play(){
+	int choice =0;
+        InputStreamReader in =new InputStreamReader(System.in);
+	BufferedReader isr = new BufferedReader(in);
+        while(wincheck() ==false){
+            System.out.print("Ok friend, its your turn!" + "\n" + "Pick your collumn! ");
+            try{
+		choice = Integer.parseInt(isr.readLine());
+            }
+            catch( IOException e ) { }
+            player =true;
+	    replace(choice);
+	    player=false;
+	    replace((int)(Math.random()*8));
+	    System.out.print(this);
 	    
+        }//end while
+	System.out.println("You win");
+    }
 	
     public static void main(String[] Args){
 	connect4 donald = new connect4();
 	donald.fill();
-	System.out.println(donald);
-	donald.replace(1);
-	donald.replace(2);
-	donald.replace(2);
-	donald.replace(2);
-	donald.replace(3);
-	donald.replace(3);
-	donald.replace(4);
-	System.out.println(donald);
-	donald.replace(1);
-	donald.replace(1);
-	donald.replace(1);
-	System.out.println(donald);
-	System.out.println(donald.wincheckrow());
-	System.out.println(donald.wincheckcol());
-	System.out.println(donald.wincheckdi());
+	donald.play();
 
     }
-}	
+}
