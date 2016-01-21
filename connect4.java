@@ -8,6 +8,7 @@ public class connect4{
     private BufferedReader in;
     public connect4(){
 	board =new String[8][8];
+	this.fill()
     }
     public  void fill(){
 	for(int i=0; i<8; i++){
