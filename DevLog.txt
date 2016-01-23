@@ -5,6 +5,10 @@
 /_____/\___/|___/_____/\____/\__, /  
                             /____/  
 ——————————————————————————————————————————————————————
+1-21-16 -- Ver 1.2
+*Checkers.java has begun
+*amishArcade.java integrated with other games
+*connect4.java integration, bug fixes
 1-19-16 — Ver 1.11
 * Othello.java production has begun
 * MasterMind.java begins to be polished 
