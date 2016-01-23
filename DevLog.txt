@@ -9,6 +9,9 @@
 *Checkers.java has begun
 *amishArcade.java integrated with other games
 *connect4.java integration, bug fixes
+
+-David Merlinsky
+———————————————————————————
 1-19-16 — Ver 1.11
 * Othello.java production has begun
 * MasterMind.java begins to be polished 
