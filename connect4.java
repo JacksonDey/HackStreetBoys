@@ -8,7 +8,7 @@ public class connect4{
     private BufferedReader in;
     public connect4(){
 	board =new String[8][8];
-	this.fill()
+	this.fill();
     }
     public  void fill(){
 	for(int i=0; i<8; i++){
@@ -18,12 +18,26 @@ public class connect4{
 	}
     }
     public void replace(int c){
+	InputStreamReader in =new InputStreamReader(System.in);
+	BufferedReader isr = new BufferedReader(in);
+	int choice=0;
 	int r = bigEmpty(c);
+	if(r==-1&&player){
+	    System.out.println("Collumn full, make another choice");
+	     try{
+		choice = Integer.parseInt(isr.readLine());
+            }
+            catch( IOException e ) { }
+	     replace(choice);
+	}
+	else{
+	     
 	if(player){
 	    board[r][c]="|X|";
 	}
 	else {
 	    board[r][c]="|O|";
+	}
 	}
     }
     public int bigEmpty(int c){
@@ -123,9 +137,6 @@ public class connect4{
     }
 	
     public static void main(String[] Args){
-	connect4 donald = new connect4();
-	donald.fill();
-	donald.play();
 
     }
 }
