@@ -27,7 +27,10 @@ public class MasterMind extends Game{
 	
 
     }//end constructor
-    public void fill(){//fill board
+    
+    //HELPER FUNCTIONS
+    
+    public void fill() {//fill board
         for(int r = 0; r <12; r ++){
             for(int c = 0; c <4; c ++){
                 board[r][c] = "o";
@@ -36,7 +39,14 @@ public class MasterMind extends Game{
         }
         
     }
-    //HELPER FUNCTIONS
+    public String printCode(){
+        String retStr = "";
+        for(int u = 0; u < 4; u++){
+            retStr += "" + code[u];
+        }
+        return retStr;
+    }
+    
     public void randomize(){
             for(int r = 0;r< 4; r++){
             code[r] = SYMBOL[(int)(Math.random()*5)];
@@ -128,34 +138,44 @@ public class MasterMind extends Game{
         }//end while
         if(gameover == false){
             int ye =0;
-            System.out.print("You tried kiddo. Here's the actual code" + "\n" + code);
-            System.out.print("Wanna play again?" + "\n" + "psst.  type 1 for yes, 2 for no");
+            System.out.println("You tried kiddo. Here's the actual code:" );
+            System.out.println( printCode() );
+            System.out.println("\n" + "Wanna play again?" + "\n" + "psst.  type 1 for yes, 2 for no" + "\n");
             try{
             ye = Integer.parseInt(in.readLine());
             }
             catch( IOException e ) { }
             if(ye == 1){
             //we can get rid of it for now
-                play();
+                MasterMind game = new MasterMind();
+                play() ;
+                turnctr = 0;
                 
             }//end if
             
         }//end the gameover if
         else{
             int nay = 0;
-            System.out.print("Wanna play again?" + "\n" + "psst.  type 1 for yes, 2 for no");
+            System.out.print("Wanna play again?" + "\n" + "psst.  type 1 for yes, 2 for no" + "\n");
             try{
             nay = Integer.parseInt(in.readLine());
             }
             catch( IOException e ) { }
             if(nay == 1){
-                play();
+                MasterMind game = new MasterMind();
+                play() ;
+                turnctr = 0;
+                System.out.print("cool");
+                
+                
+                
             }
         }
         
     }//end play
     public boolean wincheck(){
-        return false;
+        
+        return gameover;
         
         
     }
