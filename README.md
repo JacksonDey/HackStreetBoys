@@ -10,4 +10,4 @@ Welcome to the
 Where you can play some of your favorite board games!
 
 
-Select Amish Arcade to run and get playing!
+Select Amish Arcade to run and get playin!
