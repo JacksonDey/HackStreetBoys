@@ -1,4 +1,5 @@
 # HackStreetBoys
+
 Welcome to the 
 
     _         _    _        _                  _     
@@ -10,4 +11,6 @@ Welcome to the
 Where you can play some of your favorite board games!
 
 
-Select Amish Arcade to run and get playin!
+Select Amish Arcade to run and get playing!
+
+
