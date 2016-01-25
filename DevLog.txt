@@ -5,6 +5,14 @@
 /_____/\___/|___/_____/\____/\__, /  
                             /____/  
 ——————————————————————————————————————————————————————
+1-25-16 — Ver 2.0
+* All games finished
+* TicTacToe made a suprise visit
+* All work updated
+* Squashed more bugs
+
+— Jackson Deysine and David Merlinsky
+———————————————————————————
 1-25-16 — Ver 1.78
 * Othello brought to completion 
 * MasterMind works like a gem
