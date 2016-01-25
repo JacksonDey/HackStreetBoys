@@ -69,10 +69,10 @@ public class tictactoe extends Game{
         boolean choice6=mine(0,2);
         boolean choice7=mine(2,0);
         boolean choice8=mine(2,2);
-        boolean choice8=mine(2,1);
-        boolean choice8=mine(1,0);
-        boolean choice8=mine(0,2);
-        boolean choice8=mine(2,2);
+        boolean choice9=isEmpty(2,1);
+        boolean choice10=isEmpty(1,0);
+        boolean choice11=isEmpty(0,1);
+        boolean choice12=isEmpty(1,2);
         while(move<1){
         if (movecount()<4){
             
@@ -130,32 +130,32 @@ public class tictactoe extends Game{
             break;
         }
     }
-        if(choice5&& choice6){
+        if(choice5&& choice6&& choice11){
             board[0][1]="| O |";
             move++;
             break;
         }
-        else if(choice5&& choice7){
+        else if(choice5&& choice7 &&choice10){
             board[1][0]="| O |";
             move++;
             break;
         }
-        else if(choice5&& choice8){
+        else if(choice5&& choice8&&isEmpty(1,1)){
             board[1][1]="| O |";
             move++;
             break;
         }
-        else if(choice6&& choice7){
+        else if(choice6&& choice7&&isEmpty(1,1)){
             board[1][1]="| O |";
              move++;
              break;
         }
-        else if(choice6&& choice8){
+        else if(choice6&& choice8&&choice12){
             board[1][2]="| O |";
              move++;
              break;
         }
-        else if(choice8&& choice7){
+        else if(choice8&& choice7 && choice9){
             board[2][1]="| O |";
              move++;
              break;
@@ -256,7 +256,6 @@ public class tictactoe extends Game{
             notcheck();
             
         }//end while
-        System.out.print(this);
         if(!check){
             System.out.println("Wowee, a tie!...Not bad for a scrub");
         }
