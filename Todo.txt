@@ -6,9 +6,9 @@ _/(_)---(/\_/(_)
 ——————————————————————————————————————————————————————
  
                
-*Finish Up Basic Code for MasterMind √
-*Print the code at the end of the game 
-*Finalize Amish Arcade functionality(i.e. abstract or not)
-*Add coin system
-*Add more games
-*Win Counter
+* Finish Up Basic Code for MasterMind √
+* Print the code at the end of the game √
+* Finalize Amish Arcade functionality(i.e. abstract or not) √
+* Add coin system
+* Add more games √
+* Win Counter
