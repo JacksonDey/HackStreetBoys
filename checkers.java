@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.*;
-public class checkers{
+public class checkers extends Game{
     private String[][] board;
     private boolean player;
     private int pieces1;
