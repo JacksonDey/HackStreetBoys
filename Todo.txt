@@ -11,4 +11,4 @@ _/(_)---(/\_/(_)
 * Finalize Amish Arcade functionality(i.e. abstract or not) √
 * Add coin system
 * Add more games √
-* Win Counter
+* Win Counter 
