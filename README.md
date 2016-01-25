@@ -18,3 +18,6 @@ Need I say any more?  For those of you unaware, all you must do is get four in a
 
 #####Checkers
 Another very underground game.  Move diagonally and hop over your enemies pieces to slay them.  Last (wo)man standing type game, whomever is alive at the end wins!
+
+#####TicTac
+TicTacToe, but we couldn't fit the toe!  
