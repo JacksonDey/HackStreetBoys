@@ -17,7 +17,7 @@ public class amishArcade{
 		String r = "________________" +"\n" +"|               |"+"\n"+"| 1 MasterMind  |"+"\n"+"________________\n";
 		String q = "________________" +"\n" +"|               |"+"\n"+"| 2 ConnectFour |"+"\n"+"________________\n";
 		String v = "________________" +"\n" +"|               |"+"\n"+"| 3  Othello    |"+"\n"+"________________\n";
-		String w = "________________" +"\n" +"|               |"+"\n"+"| 4  Rubiks     |"+"\n"+"________________\n";
+		String w = "________________" +"\n" +"|               |"+"\n"+"| 4  Tictac     |"+"\n"+"________________\n";
 		String e = "________________" +"\n" +"|               |"+"\n"+"| 5  Checkers   |"+"\n"+"________________\n";
 		System.out.print(r);
 		System.out.print(q);
@@ -41,10 +41,10 @@ public class amishArcade{
 		    Game louisa = new Othello();
 		    louisa.play();
 		}
-//		if(choice==4){
-//		    Game jaaaaack = new Rubiks();
-//		    jaaaaack.play();
-//		}
+		if(choice==4){
+		    Game jaaaaack = new tictactoe();
+		    jaaaaack.play();
+		}
 		if(choice==5){
 		    Game matt = new Checkers();
 		    matt.play();
