@@ -45,10 +45,10 @@ public class amishArcade{
 //		    Game jaaaaack = new Rubiks();
 //		    jaaaaack.play();
 //		}
-//		if(choice==5){
-	//	    Game matt = new Checkers();
-//		    matt.play();
-//		}
+		if(choice==5){
+		    Game matt = new Checkers();
+		    matt.play();
+		}
 		return choice;
 	}
 	
