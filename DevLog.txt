@@ -5,6 +5,16 @@
 /_____/\___/|___/_____/\____/\__, /  
                             /____/  
 ——————————————————————————————————————————————————————
+1-25-16 - Ver 1.69
+*rubiks cub _-__-
+*checkers
+----------------------------------------------------
+1-24-16 - Ver 1.3.1
+*CHeckers takes shape
+*bbuuuuuuuuugs
+
+-DAvid Merlinsky
+----------------------------------
 1-24-16 — Ver 1.3
 * Othello added and is making great headway
 * MasterMind game complete, now just to add some small touchups
