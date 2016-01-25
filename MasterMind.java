@@ -109,6 +109,7 @@ public class MasterMind extends Game{
     //PLAY
     public void play(){
         fill();
+        System.out.print("In Mastermind, you must attempt to guess the secreat pattern within twelve tries.\n It is a four letter combination involving the number 1-6. \n You will be told if any part of the combo you guessed was correct.\n Good Luck!\n\n\n SAMPLE guess: 1234")
         while(turnctr < 12 && gameover == false){
             int correct = 0;
             int right_type = 0;
