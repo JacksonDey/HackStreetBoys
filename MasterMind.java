@@ -81,20 +81,21 @@ public class MasterMind extends Game{
     }//end check_type
     
     public String toString(){
-	String rowerino="";
-	for(int i=0;i<12;i++){
-	    for(int c=0; c<4; c++){
-		rowerino+=board[i][c];
-	    }
-	    rowerino+="\n";
+    String rowerino="";
+    	for(int i=0;i<12;i++){
+    	    for(int c=0; c<4; c++){
+    		    rowerino+=board[i][c];
+    	    }
+    	    rowerino+="\n";
 	}
 	
 	return rowerino;
     }   
+    
     public void fillerUp(String input,int row){
         String mock = input;
         for(int i = 0 ;i < 4 ; i++){
-            board[row][i]=mock.substring(i, i + 1);
+            board[row][i] = mock.substring(i, i + 1);
         }
     }
     public String print(String[] c){
@@ -136,7 +137,7 @@ public class MasterMind extends Game{
             turnctr++;
        
         }//end while
-        if(gameover == false){
+        gameover=true;
             int ye =0;
             System.out.println("You tried kiddo. Here's the actual code:" );
             System.out.println( printCode() );
@@ -152,25 +153,17 @@ public class MasterMind extends Game{
                 turnctr = 0;
                 
             }//end if
-            
-        }//end the gameover if
-        else{
+            //end the gameover if
             int nay = 0;
-            System.out.print("Wanna play again?" + "\n" + "psst.  type 1 for yes, 2 for no" + "\n");
+            System.out.print("Wanna play more games?" + "\n" + "psst.  type 1 for yes, 2 for no" + "\n");
             try{
             nay = Integer.parseInt(in.readLine());
             }
             catch( IOException e ) { }
             if(nay == 1){
-                MasterMind game = new MasterMind();
-                play() ;
-                turnctr = 0;
-                System.out.print("cool");
-                
-                
-                
+                amishArcade.displayGames();
+
             }
-        }
         
     }//end play
     public boolean wincheck(){
