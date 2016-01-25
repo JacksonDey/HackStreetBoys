@@ -46,7 +46,7 @@ public class amishArcade{
 		    jaaaaack.play();
 		}
 		if(choice==5){
-		    Game matt = new Checkers();
+		    Game matt = new checkers();
 		    matt.play();
 		}
 		return choice;
